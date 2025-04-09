@@ -11,7 +11,7 @@
 - Responsives Design
 
 ## Verwendung
-1. Kopieren Sie die Datei `toc.css` in Ihr Projekt
+1. Kopieren Sie die Datei `custom.css` in Ihr Projekt
 2. Binden Sie die CSS-Datei in Ihr HTML ein
 3. Stellen Sie sicher, dass Ihr Inhaltsverzeichnis die richtigen HTML-Tags verwendet
 
