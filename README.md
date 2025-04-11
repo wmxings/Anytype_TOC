@@ -1,4 +1,4 @@
-[中文](README.md) | [English](README_en-US.md) | [日本語](README_ja-JP.md) | [한국어](README_ko-KR.md) | [Deutsch](README_de-DE.md)
+[中文](README.md) | [English](README/README_en-US.md) | [日本語](README/README_ja-JP.md) | [한국어](README/README_ko-KR.md) | [Deutsch](README/README_de-DE.md)
 
 # Anytype 目录样式优化
 
