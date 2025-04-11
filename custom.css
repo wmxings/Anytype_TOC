@@ -1,25 +1,27 @@
+/* 目录容器样式 */
 .block.blockTableOfContents {
     position: fixed !important;
     right: 20px !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
+    top: 15% !important;
     z-index: 90 !important;
     padding: 10px 0 !important;
     width: 220px !important;
-    max-height: 400px !important;
+    max-height: 70% !important;
     overflow: hidden !important;
     background: transparent !important;
     border-radius: 4px !important;
     transition: all 0.3s ease !important;
     box-shadow: none !important;
-  }
-  
-  .block.blockTableOfContents:hover {
+}
+
+/* 目录悬停效果 */
+.block.blockTableOfContents:hover {
     overflow: auto !important;
     box-shadow: none !important;
-  }
-  
-  .block.blockTableOfContents .item {
+}
+
+/* 目录项基础样式 */
+.block.blockTableOfContents .item {
     text-align: left !important;
     margin-bottom: 10px !important;
     display: flex !important;
@@ -28,18 +30,20 @@
     cursor: pointer !important;
     transition: all 0.3s !important;
     position: relative !important;
-  }
-  
-  .block.blockTableOfContents .item:last-child {
+}
+
+/* 最后一个目录项移除底部边距 */
+.block.blockTableOfContents .item:last-child {
     margin-bottom: 0 !important;
-  }
-  
-  .block.blockTableOfContents .item .label,
-  .block.blockTableOfContents .item .label:hover,
-  .block.blockTableOfContents .item .label:focus,
-  .block.blockTableOfContents .item .label:active {
+}
+
+/* 目录项文字样式 */
+.block.blockTableOfContents .item .label,
+.block.blockTableOfContents .item .label:hover,
+.block.blockTableOfContents .item .label:focus,
+.block.blockTableOfContents .item .label:active {
     font-size: 12px !important;
-    line-height: 17px !important;
+    line-height: 14px !important;
     color: #8e8787 !important;
     opacity: 0 !important;
     transition: opacity 0.5s !important;
@@ -51,18 +55,21 @@
     border-bottom: none !important;
     outline: none !important;
     padding-left: 26px !important;
-  }
-  
-  .block.blockTableOfContents:hover .item .label {
+}
+
+/* 目录悬停时显示文字 */
+.block.blockTableOfContents:hover .item .label {
     opacity: 1 !important;
-  }
-  
-  .block.blockTableOfContents .item:hover .label {
+}
+
+/* 目录项悬停效果 */
+.block.blockTableOfContents .item:hover .label {
     color: #292525 !important;
     font-weight: 600 !important;
-  }
-  
-  .block.blockTableOfContents .item::before {
+}
+
+/* 目录项前导符样式 */
+.block.blockTableOfContents .item::before {
     content: '' !important;
     width: 16px !important;
     height: 4px !important;
@@ -75,63 +82,74 @@
     flex-shrink: 0 !important;
     position: absolute !important;
     left: 12px !important;
-  }
-  
-  .block.blockTableOfContents .item:hover::before {
+}
+
+/* 目录项悬停时前导符效果 */
+.block.blockTableOfContents .item:hover::before {
     background: #8e8787 !important;
-  }
-  
-  .block.blockTableOfContents .item[style*="padding-left: 24px"]::before {
+}
+
+/* 二级标题前导符样式 */
+.block.blockTableOfContents .item[style*="padding-left: 24px"]::before {
     width: 10px !important;
-  }
-  
-  .block.blockTableOfContents .item[style*="padding-left: 48px"]::before {
+}
+
+/* 三级标题前导符样式 */
+.block.blockTableOfContents .item[style*="padding-left: 48px"]::before {
     width: 10px !important;
-  }
-  
-  /* 二级标题缩进 */
-  .block.blockTableOfContents .item[style*="padding-left: 24px"] .label {
+}
+
+/* 二级标题缩进 */
+.block.blockTableOfContents .item[style*="padding-left: 24px"] .label {
     padding-left: 38px !important;
-  }
-  
-  /* 三级标题缩进 */
-  .block.blockTableOfContents .item[style*="padding-left: 48px"] .label {
+}
+
+/* 三级标题缩进 */
+.block.blockTableOfContents .item[style*="padding-left: 48px"] .label {
     padding-left: 50px !important;
-  }
-  
-  @media screen and (max-width: 1460px) {
+}
+
+/* 响应式布局 - 中等屏幕 */
+@media screen and (max-width: 1460px) {
     .block.blockTableOfContents {
-      right: 20px !important;
+        right: 20px !important;
     }
-  }
-  
-  @media screen and (max-width: 1111px) {
+}
+
+/* 响应式布局 - 小屏幕 */
+@media screen and (max-width: 1111px) {
     .block.blockTableOfContents {
-      display: none !important;
+        display: none !important;
     }
-  }
-  
-  /* Dark theme support */
-  .theme-dark .block.blockTableOfContents {
+}
+
+/* 暗色主题支持 */
+.theme-dark .block.blockTableOfContents {
     background: #1a1a1a !important;
-  }
-  
-  .theme-dark .block.blockTableOfContents .item .label {
+}
+
+.theme-dark .block.blockTableOfContents .item .label {
     color: #7f7f7f !important;
-  }
-  
-  .theme-dark .block.blockTableOfContents .item:hover .label {
+}
+
+.theme-dark .block.blockTableOfContents .item:hover .label {
     color: #fafafa !important;
-  }
-  
-  .theme-dark .block.blockTableOfContents .item::before {
+}
+
+.theme-dark .block.blockTableOfContents .item::before {
     background: #373737 !important;
-  }
-  
-  .theme-dark .block.blockTableOfContents .item:hover::before {
+}
+
+.theme-dark .block.blockTableOfContents .item:hover::before {
     background: #7f7f7f !important;
-  }
-  
-  .block.blockTableOfContents .wrapMenu {
+}
+
+/* 隐藏菜单包装器 */
+.block.blockTableOfContents .wrapMenu {
     display: none !important;
-  } 
+}
+
+/* 隐藏添加按钮 */
+#button-block-add {
+    display: none !important;
+} 
