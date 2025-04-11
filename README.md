@@ -1,9 +1,10 @@
 [中文](README.md) | [English](README/README_en-US.md) | [日本語](README/README_ja-JP.md) | [한국어](README/README_ko-KR.md) | [Deutsch](README/README_de-DE.md)
 
-# Anytype 目录样式优化
+# Anytype 悬浮目录样式优化
 
 ## 功能特点
-- 优化目录样式，提升阅读体验
+- 为 Anytype 添加悬浮目录功能，提升阅读体验
+- 目录会跟随页面滚动，方便导航
 - 为不同级别的标题添加适当的缩进
 - 保持前导符（小圆点）左对齐
 - 避免文字覆盖前导符
@@ -11,7 +12,7 @@
 - 响应式设计
 
 ## 使用方法
-1. 复制 `custom.css` 文件到您的项目
+1. 复制 `custom.css` 文件到您的 Anytype 项目
 2. 在您的 HTML 文件中引入该 CSS 文件
 3. 确保您的目录结构使用正确的 HTML 标签
 

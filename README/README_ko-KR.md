@@ -1,8 +1,10 @@
 [中文](../README.md) | [English](README_en-US.md) | [日本語](README_ja-JP.md) | [한국어](README_ko-KR.md) | [Deutsch](README_de-DE.md)
 
-# Anytype 목차 스타일 최적화
+# Anytype 플로팅 목차 스타일
 
 ## 기능
+- Anytype에 플로팅 목차 기능 추가로 내비게이션 개선
+- 목차가 페이지 스크롤을 따라다니며 쉽게 접근 가능
 - 향상된 가독성을 위한 목차 스타일
 - 제목 레벨에 따른 적절한 들여쓰기
 - 글머리 기호 왼쪽 정렬 유지
@@ -11,7 +13,7 @@
 - 반응형 디자인
 
 ## 사용 방법
-1. `custom.css` 파일을 프로젝트에 복사
+1. `custom.css` 파일을 Anytype 프로젝트에 복사
 2. HTML 파일에 CSS 파일 포함
 3. 적절한 HTML 태그를 사용하여 목차 구성
 

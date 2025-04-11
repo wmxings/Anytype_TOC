@@ -1,8 +1,10 @@
 [中文](../README.md) | [English](README_en-US.md) | [日本語](README_ja-JP.md) | [한국어](README_ko-KR.md) | [Deutsch](README_de-DE.md)
 
-# Anytype Table of Contents Style Optimization
+# Anytype Floating Table of Contents Style
 
 ## Features
+- Adds floating table of contents to Anytype for better navigation
+- Table of contents follows page scroll for easy access
 - Optimized table of contents style for better reading experience
 - Added appropriate indentation for different heading levels
 - Kept bullet points left-aligned
@@ -11,7 +13,7 @@
 - Responsive design
 
 ## Usage
-1. Copy the `custom.css` file to your project
+1. Copy the `custom.css` file to your Anytype project
 2. Include the CSS file in your HTML
 3. Ensure your table of contents uses proper HTML tags
 
